@@ -1,8 +1,8 @@
 # Simple chat based on NodeJS (Express) / Vue 2 / SocketIO
 
 ## Featurers
-* NodeJS 8 + Express
-* Vue 2
+* NodeJS 8 + Express 4
+* Vue JS 2
 * SocketIO
 * MondoDB 3 + Mongoose
 * Webpack 3
