@@ -28,7 +28,7 @@ Also you need to install MongoDB
 
 You should manualy open two terminals. In the first one you run Webpack in dev-mode. In that mode Webpack will open browser with URL "http://localhost:8080" and will be waiting for changes in "/webpack" directory. All css/js files in that mode Webpack storages in memory (not on the hdd). 
 
-In the second terminal you run Express in dev-mode Nodemon. It will be opened via Nodemon and will listen "http://localhost:3000". Remember, at this stage all static files (css/js) is serving by Webpack and storaging in memory. Express doesn't know about them.
+In the second terminal you run Express in dev-mode Nodemon. It will be opened via Nodemon and will listen "http://localhost:3000". Express will be waiting for changes in "/express" directory. Remember, at this stage all static files (css/js) is serving by Webpack and storaging in memory. Express doesn't know about them. Do some work, write code etc. Webpack/Express will watching for changes and will reload if needed.
 
 When you're ready to production you run Webpack in prod-mode. He will precess all static files and will save them into "/express/public" dir. You should run this command when you're ready to upload your site on remote host. Then you run Express in prod-mode (on remote server). He will serve css/js-files (not Webpack). After that all requests should coming to "http://localhost:3000".
 
