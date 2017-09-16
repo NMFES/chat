@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+}
+
+nav {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    display: table; 
+    height: 100%;
+}
+.container > .row:nth-of-type(1) {
+    display: table-row; 
+    height: 56px;
+
+    > div{
+        padding: 0px;
+    }
+}
+.container > .row:nth-of-type(2) {
+    height: 100%;
+    display: table-row;
+
+    > div {
+        height: 100%;
+        padding: 0px;
+
+        > div {
+            height: 100%;
+        }
+    }
+}
+.container > .row:nth-of-type(3) {
+    display: table-row; 
+    height: 100px;
+
+    > div {
+        padding: 0px;
+    }
+}
+
+.card.log {
+    height: 100%;
+}
+.card.users {
+    height: 100%;
+
+    .list {
+        height: 30px;
+        width: 100%;
+        background-color: $blue;
+        color: $white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 4px 4px 0px 0px;
+        padding-top: 3px;
+    }
+}
+
+.log .card-body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0px;
+    height: 100px;
+}
+.message {
+    padding: 8px;
+}
+.message:nth-of-type(odd) {
+    background: #f5f5f5
+}
+.message > div:nth-of-type(1) {
+    display: inline-block;
+    color: $gray-400;
+    font-size: 14px;
+}
+.message > div:nth-of-type(2) {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: $blue;
+}
+.message > div:nth-of-type(3) {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.users .card-body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 50px;
+}
+
+.logout {
+    cursor: pointer;
+}
+
+.alert {
+    font-size: 14px;
+    padding: 7px;
+}
